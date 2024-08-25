@@ -1,6 +1,10 @@
-#root {
-  max-width: 1280px;
+* {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+  height: 100%;
+}
+.Content{
+  display: grid;
+    place-items: center; /* Centers both horizontally and vertically */
+    height: 80vh;
 }

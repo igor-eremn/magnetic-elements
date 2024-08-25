@@ -1,0 +1,27 @@
+.header {
+    padding: 1rem;
+}
+  
+.headerLight {
+    background-color: #f0f0f0;
+    color: #333;
+}
+  
+.headerDark {
+    background-color: #333;
+    color: #f0f0f0;
+}
+  
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.button {
+    padding: 0.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+  

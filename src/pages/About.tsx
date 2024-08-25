@@ -1,7 +1,13 @@
 import React from 'react';
+import Header from '../components/Header';
 
 const About: React.FC = () => {
-  return <h1>You are on About Page</h1>;
+  return (
+    <div>
+      <Header />
+      <h1>About Page</h1>
+    </div>
+  );
 };
 
 export default About;
