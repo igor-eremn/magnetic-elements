@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
-import styles from '../styles/About.module.css';
+import styles from '../styles/Account.module.css';
 import { ThemeContext } from '../context/ThemeContext';
 
-const About: React.FC = () => {
+const Account: React.FC = () => {
   const themeContext = useContext(ThemeContext);
 
   if (!themeContext) {
@@ -13,9 +13,9 @@ const About: React.FC = () => {
 
   return (
     <div className={`${styles.page} ${theme === 'light' ? styles.light : styles.dark}`}>
-      <h1>About Page</h1>
+      <h1>Account Page</h1>
     </div>
   );
 };
 
-export default About;
+export default Account;

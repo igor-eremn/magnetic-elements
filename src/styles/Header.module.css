@@ -1,27 +1,63 @@
 .header {
     padding: 1rem;
-}
-  
-.headerLight {
-    background-color: #f0f0f0;
-    color: #333;
-}
-  
-.headerDark {
-    background-color: #333;
-    color: #f0f0f0;
-}
-  
+} 
 .nav {
+    padding: 5px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 0px;
+    min-height: 40px;
 }
-  
+.logo{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: monospace;
+    margin-left: 2%;
+    text-decoration: none;
+    color: inherit;
+}
 .button {
-    padding: 0.5rem;
     cursor: pointer;
+    border-radius: 50%;
     background: none;
     border: none;
 }
-  
+.link {
+    text-decoration: none;
+    color: inherit;
+    margin: 0 15px;
+    font-size: 1.4rem;
+}
+.Cart{
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+/* Light Side */
+.btnLight{
+    color: black;
+}
+.headerLight {
+    background-color: #f0f0f0;
+    color: #333;
+    border-bottom: 3px solid black;
+}
+.linkW:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid black;
+}
+
+/* Dark Side */
+.headerDark {
+    background-color: #333;
+    color: #f0f0f0;
+    border-bottom: 3px solid white;
+}
+.btnDark{
+    color: white;
+}
+.linkD:hover {
+    padding-bottom: 2px;
+    border-bottom: 2px solid white;
+}

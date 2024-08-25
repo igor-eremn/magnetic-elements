@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import Header from '../components/Header';
 import styles from '../styles/Home.module.css';
 import { ThemeContext } from '../context/ThemeContext';
 
@@ -13,8 +12,7 @@ const Home: React.FC = () => {
   const { theme } = themeContext;
 
   return (
-    <div className={theme === 'light' ? styles.light : styles.dark}>
-      <Header />
+    <div className={`${styles.page} ${theme === 'light' ? styles.light : styles.dark}`}>
       <h1>Home Page</h1>
     </div>
   );
