@@ -1,16 +1,17 @@
 .header {
-    padding: 1rem;
+    padding: 0.6rem;
 } 
 .nav {
-    padding: 5px 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 0px;
     min-height: 40px;
+    width: 80%;
+    margin: 0 auto;
 }
 .logo{
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
     font-family: monospace;
     margin-left: 2%;
@@ -27,37 +28,37 @@
     text-decoration: none;
     color: inherit;
     margin: 0 15px;
-    font-size: 1.4rem;
+    font-size: 20px;
+    padding-top: 20px;
 }
 .Cart{
     padding-right: 10px;
     font-size: 15px;
 }
+.navLinks{
+    padding-top: 10px;
+}
 
 /* Light Side */
 .btnLight{
-    color: black;
+    color: #f0f0f0;
 }
 .headerLight {
-    background-color: #f0f0f0;
-    color: #333;
-    border-bottom: 3px solid black;
+    background-color: #333;
+    color: #f0f0f0;
 }
-.linkW:hover {
-    padding-bottom: 2px;
-    border-bottom: 2px solid black;
+.logoL{
+    color: #f0f0f0;
 }
 
 /* Dark Side */
 .headerDark {
     background-color: #333;
     color: #f0f0f0;
-    border-bottom: 3px solid white;
 }
 .btnDark{
-    color: white;
+    color: #f0f0f0;
 }
-.linkD:hover {
-    padding-bottom: 2px;
-    border-bottom: 2px solid white;
+.logoD{
+    color: #f0f0f0;
 }

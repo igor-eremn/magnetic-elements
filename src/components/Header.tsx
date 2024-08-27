@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import style from '../styles/Header.module.css';
 import { Link } from 'react-router-dom';
-import { Moon, Sun, ShoppingCart } from "lucide-react";
+import { Moon, Sun, ShoppingCart, CircleUser } from "lucide-react";
 
 const Header: React.FC = () => {
   const themeContext = useContext(ThemeContext);
@@ -16,27 +16,18 @@ const Header: React.FC = () => {
   return (
     <header className={`${style.header} ${theme === 'light' ? style.headerLight : style.headerDark}`}>
       <nav className={style.nav}>
-        <Link to="/" className={style.logo}>
-          Magnetic Elements
+        <Link to="/" className={`${style.logo} ${theme === 'light' ? style.logoL : style.logoD}`}>
+          MAGNETIC ELEMENTS
         </Link>
         <div className={style.navLinks}>
-          <Link to="/" className={`${style.link} ${theme === 'light' ? style.linkW : style.linkD}`}>
-            Home
-          </Link>
-          <Link to="/catalog" className={`${style.link} ${theme === 'light' ? style.linkW : style.linkD}`}>
-            Catalog
-          </Link>
           <Link to="/account" className={`${style.link} ${theme === 'light' ? style.linkW : style.linkD}`}>
-            Account
+            <CircleUser/>
           </Link>
-          <Link to="/about" className={`${style.link} ${theme === 'light' ? style.linkW : style.linkD}`}>
-            About
-          </Link>
+          <button className={`${style.button} ${style.Cart} ${theme === 'light' ? style.btnLight : style.btnDark}`}>
+            <ShoppingCart/> 0
+          </button>
           <button onClick={toggleTheme} className={`${style.button} ${theme === 'light' ? style.btnLight : style.btnDark}`}>
             {theme === 'light' ? <Moon/> : <Sun/>}
-          </button>
-          <button className={`${style.button} ${style.Cart} ${theme === 'light' ? style.btnLight : style.btnDark}`}>
-            <ShoppingCart/> 5
           </button>
         </div>
       </nav>
