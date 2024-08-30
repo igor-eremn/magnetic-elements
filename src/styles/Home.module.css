@@ -1,12 +1,21 @@
 .page {
     display: grid;
-    width: 1000px;
+    width: 900px;
     margin: 0 auto;
     gap: 1rem;
     align-items: center;
     grid-template-columns: 1fr;
     height: 80vh;
   }
+
+.top_seller{
+    height: 25vh;
+}
+
+.new_arrive{
+    height: 25vh;
+    margin-bottom: 5rem;
+}
 
 /* Light Side */
 .light {
