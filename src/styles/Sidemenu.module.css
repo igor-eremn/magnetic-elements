@@ -1,6 +1,6 @@
 .page {
     display: grid;
-    width: 1000px;
+    width: 300px;
     margin: 0 auto;
     gap: 1rem;
     align-items: center;
@@ -13,7 +13,6 @@
     background-color: #f0f0f0;
     color: #333;
     border-left: 3px solid black;
-    border-right: 3px solid black;
 }
 
 /* Dark Side */
@@ -21,5 +20,4 @@
     background-color: #333;
     color: #f0f0f0;
     border-left: 3px solid white;
-    border-right: 3px solid white;
 }

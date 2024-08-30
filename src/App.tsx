@@ -9,6 +9,7 @@ import NotFound from './pages/NotFound';
 import Header from './components/Header';
 import NavBar from './components/NavBar';
 import './styles/App.css';
+import Sidemenu from './components/Sidemenu';
 
 const App: React.FC = () => {
   const themeContext = useContext(ThemeContext);
@@ -23,13 +24,16 @@ const App: React.FC = () => {
     <div className={`page ${theme === 'light' ? 'backL' : 'backD'}`}>
       <Header />
       <NavBar />
-      <Routes>
-        <Route path="/"         element={<Home />} />
-        <Route path="/catalog"  element={<Catalog />} />
-        <Route path="/account"  element={<Account />} />
-        <Route path="/about"    element={<About />} />
-        <Route path="*"         element={<NotFound />} />
-      </Routes>
+      <div className='content-container'>
+        <Sidemenu/>
+        <Routes>
+          <Route path="/"         element={<Home />} />
+          <Route path="/catalog"  element={<Catalog />} />
+          <Route path="/account"  element={<Account />} />
+          <Route path="/about"    element={<About />} />
+          <Route path="*"         element={<NotFound />} />
+        </Routes>
+      </div>
     </div>
   );
 };

@@ -4,8 +4,8 @@
     margin: 0 auto;
     gap: 1rem;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    height: 90vh;
+    grid-template-columns: 1fr;
+    height: 80vh;
   }
 
 /* Light Side */

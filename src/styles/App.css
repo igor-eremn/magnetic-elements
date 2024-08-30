@@ -4,6 +4,14 @@
   height: 100%;
 }
 
+.content-container{
+  display: grid;
+  margin: 0 auto;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  width: 1300px;
+}
+
 .backL{
   background-color: #f0f0f0;
 }
