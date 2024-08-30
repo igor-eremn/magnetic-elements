@@ -9,12 +9,24 @@
   }
 
 .top_seller{
-    height: 25vh;
+    height: 40vh;
+    background-color: #272626;
+    margin-top: 1.5rem;;
+}
+
+.ts_h1{
+    text-align: left;
+    margin-left: 3rem;
 }
 
 .new_arrive{
-    height: 25vh;
+    height: 40vh;
     margin-bottom: 5rem;
+}
+
+.na_h1{
+    text-align: left;
+    margin-left: 3rem;
 }
 
 /* Light Side */
@@ -27,8 +39,6 @@
 
 /* Dark Side */
 .dark {
-    background-color: #333;
+    background-color: #272626;
     color: #f0f0f0;
-    border-left: 3px solid white;
-    border-right: 3px solid white;
 }

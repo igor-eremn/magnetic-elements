@@ -13,13 +13,13 @@ const Sidemenu: React.FC = () => {
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
 
   const menuItems = [
-    { name: 'Option 1', submenu: ['Subitem 1A', 'Subitem 1B'] },
+    { name: 'Option 1', submenu: ['Subitem 1A', 'Subitem 1B', 'Subitem 1C', 'Subitem 1D', 'Subitem 1E', 'Subitem 1F'] },
     { name: 'Option 2', submenu: ['Subitem 2A', 'Subitem 2B'] },
     { name: 'Option 3', submenu: ['Subitem 3A', 'Subitem 3B'] },
-    { name: 'Option 4', submenu: ['Subitem 4A', 'Subitem 4B'] },
+    { name: 'Option 4', submenu: ['Subitem 1A', 'Subitem 1B', 'Subitem 1C', 'Subitem 1D'] },
     { name: 'Option 5', submenu: ['Subitem 5A', 'Subitem 5B'] },
     { name: 'Option 6', submenu: ['Subitem 6A', 'Subitem 6B'] },
-    { name: 'Option 7', submenu: ['Subitem 7A', 'Subitem 7B'] },
+    { name: 'Option 7', submenu: ['Subitem 7A', 'Subitem 7B', 'Subitem 7C'] },
     { name: 'Option 8', submenu: ['Subitem 8A', 'Subitem 8B'] },
     { name: 'Option 9', submenu: ['Subitem 9A', 'Subitem 9B'] },
     { name: 'Option 10', submenu: ['Subitem 10A', 'Subitem 10B'] },
